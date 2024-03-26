@@ -19683,3 +19683,15 @@ transform: translateX(0);
   background: #d6df3b;
   border-radius: 5px;
 }
+
+.btn{
+  color: #fff;
+  background: #d6df3b;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  color: #fff;
+  background: #60298a;
+  border-radius: 5px;
+}

@@ -63,8 +63,8 @@ permalink: "index.html"
         ============================================= -->
 
         <section class="px-2" style="background-color: #f0f4fb;">
-            <div class="container clearfix ">
-                <div class="row py-6">
+            <div id="etapas" class="container clearfix ">
+                <div   class="row py-6">
                     <div class="col-lg-12">
                         <h2 class="text-titles3" style="text-align: center;">Etapas de la construcción de la ley</h2>
                         <img width="250px" class="my-4 mx-auto" src="/assets/img/iconos/LINEA.png">
@@ -241,7 +241,7 @@ permalink: "index.html"
         ============================================= -->
 
         <section class="px-2" style="background-color: #f0f4fb;">
-            <div class="container clearfix ">
+            <div id="comovamos" class="container clearfix ">
                 <div class="row pt-6 pb-4 justify-content-center">
                     
                     <div class="col-lg-8 text-center">
@@ -392,6 +392,23 @@ permalink: "index.html"
             </div>
         </section>
 
+        <!-- Interaccion ciudadana
+        ============================================= -->
+
+        <section class="px-2" style="background-color: #f0f4fb;">
+            <div id="interaccion" class="container clearfix ">
+                <div class="row pt-6 pb-4 justify-content-center">
+                    
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-titles3" style="text-align: center;">Interacción Ciudadana</h2>
+                        <img width="250px" class="my-4 mx-auto" src="/assets/img/iconos/LINEA.png">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
 
         <!-- Que significa
         ============================================= -->
@@ -403,11 +420,65 @@ permalink: "index.html"
                     <div class="col-lg-12 text-center">
                         <img class="m-auto p-4" src="/assets/img/iconos/ICONOS 05.png">
                         <h2 class="text-titles2">¿Qué significa para ti la salud mental?</h2>
+                        <h6 class="text-titles4" style="color: #7f8b92!important;">¿Cuál es su importancia?</h6>
                         <form class="form" action="#">
                             <input type="text">
                         </form>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- Informate
+        ============================================= -->
+
+        <section class="px-2" style="background-color: #f0f4fb;">
+            <div id="informate" class="container clearfix ">
+                <div class="row pt-6 pb-4 justify-content-center">
+                    
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-titles3" style="text-align: center;">Informate</h2>
+                        <img width="250px" class="my-4 mx-auto" src="/assets/img/iconos/LINEA.png">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contacto
+        ============================================= -->
+
+        <section class="px-2" style="background-color: #fefeff;">
+            <!-- contacto -->
+            <div class="container pt-130 pb-130" id="contacto">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12 mb-40">
+                        <h1 style="font-size:30px;line-height: 25px;" class="mb-10">Contáctanos</h1>
+                        <img width="250px" class="my-4" src="/assets/img/iconos/LINEA.png">
+                        <br>
+                        <p class="mb-20">Llena el siguiente formulario y nuestro equipo te estará contactando</p>
+                        <h6 class="mb-20"><b>Síguenos a través de nuestras redes sociales</b></h6>
+                        <div class="redes">
+                            <a target="_blank" href="https://www.facebook.com/Redciudadanagt"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://twitter.com/redxguate"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/redxguate/"><i class="fab fa-instagram "></i></a>
+                            <a target="_blank" href="https://www.youtube.com/c/RedciudadanaOrgGt"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12">
+                        <form class="contact_form" id="form" target="_self" onsubmit="return postToForm();" action="" autocomplete="off">
+                            <input id="name" name="entry.1064235632" type="string" required placeholder="Nombre Completo"/>
+                            <input id="email" name="entry.1330832081" type="email" required placeholder="Correo Electrónico"/>
+                            <input id="affair" name="entry.1233483376" type="string" placeholder="Asunto / Motivo de Contacto"/>
+                            <textarea id="message" name="entry.608682247" type="string" required placeholder="Mensaje"></textarea>
+                            <button id="send" type="submit" class="btn">Envíanos un Mensaje</button>
+                        </form>
+
+                        <h3 id="success-msg" style="display:none;"> Su mensaje ha sido enviado</h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -453,5 +524,33 @@ permalink: "index.html"
     })
 
 </script>
+
+<script>
+    function postToForm() {
+        var field1 = $("#name").val();
+        var field2 = $("#email").val();
+        var field3 = $("#affair").val();
+        var field4 = $("#message").val();
+
+        $.ajax({
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSe2DNIWZVQugZ_G-rQCzO9EKpWr66ZXe8rbBBHtKYduKIeXyQ/formResponse?",
+            data: {"entry.1064235632": field1, "entry.1330832081": field2, "entry.1233483376": field3, "entry.608682247": field4},
+            type: "POST",
+            dataType: "xml",
+            success: function(d)
+            {
+            },
+            error: function(x, y, z)
+                {
+
+                    $('#success-msg').show();
+                    $('#form').hide();
+                    
+                }
+        });
+        return false;
+    }
+</script>
+
 
 {% endblock %}
