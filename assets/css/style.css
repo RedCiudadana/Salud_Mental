@@ -19830,3 +19830,11 @@ transform: translateX(0);
   position: absolute;
   border-radius:8px;
 }
+
+.tiktok-embed>section:before{
+  display: none!important;
+}
+
+.tiktok-embed>section a{
+  display: none!important;
+}
