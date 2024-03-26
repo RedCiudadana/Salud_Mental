@@ -219,7 +219,7 @@ a {
 }
 
 a:hover {
-  color: #03ac8a;
+  color: #d6df3b;
 }
 
 a img {
@@ -6144,7 +6144,7 @@ body:not(.top-search-open)
 }
 
 .text-titles4{
-  color: #03324e!important;
+  color: #475760!important;
   font-family: 'Metropolis-Regular', sans-serif!important;
   font-size: 18px!important;
   line-height: 35px;
@@ -19560,4 +19560,136 @@ label.checkbox {
   border-radius:10px ;
   font-size: 25px;
   padding: 10px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  background-color: #fff;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.img-shader{
+  width: 100%;
+  border: 1px #ccc solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px #ececec;
+}
+
+.img-shader img{
+  border-radius: 10px;
+}
+
+.como-vamos-div {
+  background-color: #fff; /* Color de fondo del div */
+  border-bottom-left-radius: 8px; /* Radio de borde del div */
+  border-bottom-right-radius: 8px;
+  padding: 60px 10px 30px 10px;
+  position: relative; /* Para la posición de la pestaña */
+  max-width: 300px;
+  margin: 40px auto; /* Espacio para la pestaña superior */
+  border-top: 15px solid #8e9aa5;
+}
+
+.active_box{
+  border-top: 15px solid #d1e27c!important;
+}
+
+.active_box .custom-tab{
+  background-color: #d1e27c!important;
+}
+
+.active_box .custom-tab::after{
+  border-color: #d1e27c transparent transparent transparent!important; /* Color de la flecha */
+}
+
+.como-vamos-div .custom-tab {
+  position: absolute;
+  top: 5%; /* Ajusta según sea necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px; /* Ancho de la pestaña */
+  height: 45px; /* Altura de la pestaña */
+  background-color: #8e9aa5; /* Color de fondo de la pestaña */
+  border-radius: 8px 8px 5px 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  line-height: 50px; /* Alineación vertical del número */
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+}
+
+.como-vamos-div .custom-tab::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  border-radius: 15px;
+  border-width: 15px 40px 0;
+  border-style: solid;
+  border-color: #8e9aa5 transparent transparent transparent; /* Color de la flecha */
+  transform: translateX(-50%);
+}
+
+.como-vamos-div .custom-body {
+  color: #000; /* Cambia esto al color de texto del cuerpo */
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+.redes a{
+  color: #58625d;
+  padding: 5px;
+  transition: 0.5s all ease;
+}
+
+.redes a:hover{
+  color: #fff;
+  background: #d6df3b;
+  border-radius: 5px;
 }
