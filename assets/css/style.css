@@ -6158,8 +6158,7 @@ body:not(.top-search-open)
 @media (max-width:400px){
   .slider-element {
     background-image: url('/assets/img/slider/SLIDER\ 02.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: 500%;
   }
 
   .h-100-res{
@@ -19694,4 +19693,78 @@ transform: translateX(0);
   color: #fff;
   background: #60298a;
   border-radius: 5px;
+}
+
+.box_novedad1{
+  background-color: #fff;
+  display: flex;
+}
+
+.box_novedad2{
+  background-color: #fff;
+  display: block;
+}
+
+.box_novedad2 img{
+  width: 100%;
+}
+
+.res_40{
+  width: 40%;
+}
+
+.res_50{
+  width: 50%;
+}
+
+.res_60{
+  width: 60%;
+}
+
+@media (max-width: 1000px) {
+  .res_50{
+    width: 100%;
+  }
+  .res_40{
+    width: 100%;
+  }
+  .res_60{
+    width: 100%;
+  }
+}
+
+/* Estilos para el botón de hamburguesa */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Estilos para el menú responsive */
+.responsive-menu .menu-container {
+  display: none;
+}
+
+.responsive-menu.show-menu .menu-container {
+  display: block;
+}
+
+@media only screen and (max-width: 995px) {
+.text-slider{
+  padding-bottom: 50px;
+}
+.menu-toggle {
+    display: block;
+}
+
+.primary-menu.responsive-menu {
+    display: none;
+}
 }
