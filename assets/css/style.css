@@ -88,28 +88,17 @@
 
 ---------------------------------------------------------------- */
 
-@font-face {
-  font-family: "Metropolis-Bold";
 
-  src: url("/assets/fonts/Metropolis-Bold.otf");
+@font-face {
+  font-family: "Nexa-Heavy";
+
+  src: url("/assets/fonts/Nexa-Heavy.otf");
 }
 
 @font-face {
-  font-family: "Metropolis-Medium";
+  font-family: "Nexa-Regular";
 
-  src: url("/assets/fonts/Metropolis-Medium.otf");
-}
-
-@font-face {
-  font-family: "Metropolis-Regular";
-
-  src: url("/assets/fonts/Metropolis-Regular.otf");
-}
-
-@font-face {
-  font-family: "Metropolis-SemiBold";
-
-  src: url("/assets/fonts/Metropolis-SemiBold.otf");
+  src: url("/assets/fonts/Nexa-Regular.otf");
 }
 
 
@@ -167,7 +156,7 @@ span{
   color: #d6df3b;
   font-size: 20px;
   font-weight: 800;
-  font-family: 'Metropolis-Bold', sans-serif;
+  font-family: 'Nexa-Heavy', sans-serif;
 }
 
 .clear {
@@ -210,7 +199,7 @@ span{
 body {
   line-height: 1.5;
   color: #57646e;
-  font-family: "Metropolis-Medium", sans-serif !important;
+  font-family: "Nexa-Regular", sans-serif !important;
 }
 
 a {
@@ -254,7 +243,7 @@ h6 {
   font-weight: 600;
   line-height: 1.5;
   margin: 0 0 30px 0;
-  font-family: "Metropolis-Bold", sans-serif !important;
+  font-family: "Nexa-Heavy", sans-serif !important;
 }
 
 h5,
@@ -323,7 +312,7 @@ h6 > span:not(.nocolor):not(.badge) {
 }
 
 a, p{
-  font-family: "Metropolis-Medium", sans-serif;;
+  font-family: "Nexa-Regular", sans-serif;;
 }
 
 p,
@@ -341,7 +330,7 @@ form {
 }
 
 small {
-  font-family: "Metropolis-Regular", sans-serif;
+  font-family: "Nexa-Regular", sans-serif;
 }
 
 @media (max-width: 1200px) {
@@ -572,15 +561,15 @@ span.middot {
 }
 
 .font-body {
-  font-family: "Metropolis-Regular", sans-serif;
+  font-family: "Nexa-Regular", sans-serif;
 }
 
 .font-primary {
-  font-family: "Metropolis-Regular", sans-serif;
+  font-family: "Nexa-Regular", sans-serif;
 }
 
 .font-secondary {
-  font-family: "Metropolis-Regular", serif;
+  font-family: "Nexa-Regular", serif;
 }
 
 .fw-extralight {
@@ -3709,7 +3698,7 @@ html[xmlns] .slider-wrap {
 
 #logo a {
   color: #000;
-  font-family: "Metropolis-Regular", sans-serif;
+  font-family: "Nexa-Regular", sans-serif;
   font-size: 36px;
 }
 
@@ -3930,7 +3919,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   font-weight: 700;
   font-size: 0.8125rem;
   letter-spacing: 1px;
-  font-family: "Metropolis-Regular", sans-serif;
+  font-family: "Nexa-Regular", sans-serif;
   transition: 0.5s;
 }
 
@@ -3982,7 +3971,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   font-weight: 400;
   color: #666;
   letter-spacing: 0;
-  font-family: "Metropolis-Regular", sans-serif;
+  font-family: "Nexa-Regular", sans-serif;
 }
 
 .sub-menu-container .menu-item:hover > .menu-link {
@@ -6044,7 +6033,7 @@ body:not(.top-search-open)
 
 .text-slider{
   color: #000!important;
-  font-family: 'Metropolis-Bold', sans-serif!important;
+  font-family: 'Nexa-Heavy', sans-serif!important;
   font-size: 30px!important;
   line-height: 35px;
   font-weight: 600;
@@ -6052,7 +6041,7 @@ body:not(.top-search-open)
 
 .text-slider2{
   color: #000!important;
-  font-family: 'Metropolis-Regular', sans-serif!important;
+  font-family: 'Nexa-Regular', sans-serif!important;
   font-size: 20px!important;
   line-height: 25px;
   font-weight: 500;
@@ -6062,7 +6051,7 @@ body:not(.top-search-open)
 
 .text-slider3{
   color: #000!important;
-  font-family: 'Metropolis-Regular', sans-serif!important;
+  font-family: 'Nexa-Regular', sans-serif!important;
   font-size: 17px!important;
   line-height: 25px;
   font-weight: 500;
@@ -6074,7 +6063,7 @@ body:not(.top-search-open)
   background: #000;
   padding: 5px 15px;
   color: #F1D61B;
-  font-family: 'Metropolis-Regular', sans-serif!important;
+  font-family: 'Nexa-Regular', sans-serif!important;
   font-size: 15px!important;
   line-height: 20px;
   font-weight: 500;
@@ -6119,7 +6108,7 @@ body:not(.top-search-open)
 
 .text-titles{
   color: #d6df3b!important;
-  font-family: 'Metropolis-Bold', sans-serif!important;
+  font-family: 'Nexa-Heavy', sans-serif!important;
   font-size: 38px!important;
   line-height: 30px;
   font-weight: 900!important;
@@ -6127,7 +6116,7 @@ body:not(.top-search-open)
 
 .text-titles2{
   color: #fff!important;
-  font-family: 'Metropolis-Bold', sans-serif!important;
+  font-family: 'Nexa-Heavy', sans-serif!important;
   font-size: 38px!important;
   line-height: 35px;
   font-weight: 600!important;
@@ -6136,7 +6125,7 @@ body:not(.top-search-open)
 
 .text-titles3{
   color: #475760!important;
-  font-family: 'Metropolis-Bold', sans-serif!important;
+  font-family: 'Nexa-Heavy', sans-serif!important;
   font-size: 30px!important;
   line-height: 35px;
   font-weight: 800!important;
@@ -6145,7 +6134,7 @@ body:not(.top-search-open)
 
 .text-titles4{
   color: #475760!important;
-  font-family: 'Metropolis-Regular', sans-serif!important;
+  font-family: 'Nexa-Regular', sans-serif!important;
   font-size: 18px!important;
   line-height: 35px;
   font-weight: 600!important;
@@ -6157,8 +6146,9 @@ body:not(.top-search-open)
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-image: url('/assets/img/slider/SLIDER-25.png');
+  background-image: url('/assets/img/slider/SLIDER\ 01.png');
   background-size:cover;
+  background-repeat: no-repeat;
 }
 
 .h-100-res{
@@ -6167,7 +6157,7 @@ body:not(.top-search-open)
 
 @media (max-width:400px){
   .slider-element {
-    background-image: url('/assets/img/slider/slider-home-movil.png');
+    background-image: url('/assets/img/slider/SLIDER\ 02.png');
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -18741,14 +18731,14 @@ label.checkbox {
 
 .podcast-title{
   color: #fff;
-  font-family: 'Metropolis-Bold', sans-serif!important;
+  font-family: 'Nexa-Heavy', sans-serif!important;
   font-size: 40px;
   font-weight: 700!important;
 }
 
 .podcast-description{
   color: #fff;
-  font-family: 'Metropolis-SemiBold', sans-serif!important;
+  font-family: 'Nexa-Regular', sans-serif!important;
   font-size: 20px;
   font-weight: 300!important;
 }
@@ -19522,7 +19512,7 @@ label.checkbox {
   cursor: pointer;
   padding: 10px;
   color: #000!important;
-  font-family: 'Metropolis-Bold', sans-serif!important;
+  font-family: 'Nexa-Heavy', sans-serif!important;
   font-size: 17px!important;
   font-weight: 900!important;
   text-align: center;
