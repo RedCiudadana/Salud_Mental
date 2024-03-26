@@ -19671,6 +19671,23 @@ label.checkbox {
 transform: translateX(0);
 }
 
+.redes_foot{
+  display: flex;
+  justify-content: end;
+}
+
+.redes_foot a{
+  color: #58625d;
+  padding: 5px;
+  transition: 0.5s all ease;
+}
+
+.redes_foot a:hover{
+  color: #fff;
+  background: #d6df3b;
+  border-radius: 5px;
+}
+
 .redes a{
   color: #58625d;
   padding: 5px;
