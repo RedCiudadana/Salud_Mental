@@ -1,0 +1,45 @@
+---
+permalink: "/contacto/index.html"
+---
+
+{% extends "src/base2.njk" %}
+
+{% block head %}
+<title>Salud Mental | Contacto</title>
+{% endblock %}
+
+{% block content %}
+
+
+        <section class="px-2" style="background-color: #fefeff;">
+            <div class="container pt-130 pb-130" id="contacto">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12 mb-40">
+                        <h1 style="font-size:30px;line-height: 25px;" class="mb-10">Contáctanos</h1>
+                        <img width="250px" class="my-4" src="/assets/img/iconos/LINEA.png">
+                        <br>
+                        <p class="mb-20">Llena el siguiente formulario y nuestro equipo te estará contactando</p>
+                        <h6 class="mb-20"><b>Síguenos a través de nuestras redes sociales</b></h6>
+                        <div class="redes">
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=61555874333681&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://twitter.com/laurafmarroquin"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/laurafmarroquin/"><i class="fab fa-instagram "></i></a>
+                            <a target="_blank" href="https://www.tiktok.com/@laurafmarroquin"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12">
+                        <form class="contact_form" id="form" target="_self" onsubmit="return postToForm();" action="" autocomplete="off">
+                            <input id="name" name="entry.1064235632" type="string" required placeholder="Nombre Completo"/>
+                            <input id="email" name="entry.1330832081" type="email" required placeholder="Correo Electrónico"/>
+                            <input id="affair" name="entry.1233483376" type="string" placeholder="Asunto / Motivo de Contacto"/>
+                            <textarea id="message" name="entry.608682247" type="string" required placeholder="Mensaje"></textarea>
+                            <button id="send" type="submit" class="btn">Envíanos un Mensaje <i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+
+                        <h3 id="success-msg" style="display:none;"> Su mensaje ha sido enviado</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% endblock %}
