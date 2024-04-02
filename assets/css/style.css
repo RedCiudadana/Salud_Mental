@@ -19589,6 +19589,7 @@ label.checkbox {
   max-width: 300px;
   margin: 40px auto; /* Espacio para la pestaña superior */
   border-top: 15px solid #8e9aa5;
+  height: 80%;
 }
 
 .active_box{
