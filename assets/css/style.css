@@ -6157,12 +6157,14 @@ body:not(.top-search-open)
 
 @media (max-width:400px){
   .slider-element {
-    background-image: url('/assets/img/slider/SLIDER\ 02.png');
-    background-size: 500%;
+    background-image: url('/assets/img/slider/slider-movil.png');
+    background-size: 150%;
+    background-position: top;
+    height: 1000px;
   }
 
   .h-100-res{
-    height: 500px;
+    height: 1000px!important;
   }
 }
 
