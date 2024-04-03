@@ -40,6 +40,9 @@ permalink: "index.html"
                                     uso de sustancias a lo largo de su vida (Encuesta Nacional de Salud Mental, 2019). </p>
                             </div>
                         </div>
+                        <div class="text-center">
+                            <a href="/propuesta/index.html" class="btn">Participa</a>
+                        </div>
                     </div>
 
                 </div>
@@ -54,7 +57,7 @@ permalink: "index.html"
                 <div class="row py-6">
 
                     <div class="col-lg-4 text-center">
-                        <iframe width="560" height="315" src="/assets/img/video_inicio.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="/assets/img/video_inicio.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
 
                     <div class="col-lg-8">
@@ -95,7 +98,7 @@ permalink: "index.html"
                     </div>
                     <div class="col-lg-3 my-4 text-center">
                         <button onclick="openTab(event, '1')" id="defaultOpen">
-                            <img style="margin: auto; padding-block: 10px; width: 150px;height: 150px;" src="/assets/img/iconos/icono.png">
+                            <img id="img_etp_1" style="margin: auto; padding-block: 10px; width: 150px;height: 150px;" src="/assets/img/iconos/etapas1.png">
                             <h3 class="text-titles4">Escucha ciudadana</h3>
                             <!-- <p class="">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
@@ -104,19 +107,19 @@ permalink: "index.html"
                     </div>
                     <div class="col-lg-3 my-4 text-center">
                         <button onclick="openTab(event, '2')">
-                            <img style="margin: auto; padding-block: 10px; width: 150px;height: 150px;" src="/assets/img/iconos/icono.png">
+                            <img id="img_etp_2" style="margin: auto; padding-block: 10px; width: 150px;height: 150px;" src="/assets/img/iconos/etapas2.png">
                             <h3 class="text-titles4">Investigación</h3>
                         </button>
                     </div>
                     <div class="col-lg-3 my-4 text-center">
                         <button onclick="openTab(event, '3')">
-                            <img style="margin: auto; padding-block: 10px; width: 150px;height: 150px;" src="/assets/img/iconos/icono.png">
+                            <img id="img_etp_3" style="margin: auto; padding-block: 10px; width: 150px;height: 150px;" src="/assets/img/iconos/etapas3.png">
                             <h3 class="text-titles4">Definición del marco de acción</h3>
                         </button>
                     </div>
                     <div class="col-lg-3 my-4 text-center">
                         <button onclick="openTab(event, '4')">
-                            <img style="margin: auto; padding-block: 10px; width: 150px;height: 150px;" src="/assets/img/iconos/icono.png">
+                            <img id="img_etp_4" style="margin: auto; padding-block: 10px; width: 150px;height: 150px;" src="/assets/img/iconos/etapas4.png">
                             <h3 class="text-titles4">Mesas de diálogo</h3>
                         </button>
                     </div>
@@ -126,7 +129,7 @@ permalink: "index.html"
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="d-flex align-items-center mb-4">
-                                    <img style="width: 50px;height: 50px;margin-right: 15px;" src="/assets/img/iconos/icono.png">
+                                    <img style="width: 50px;height: 50px;margin-right: 15px;" src="/assets/img/iconos/etapas1hov.png">
                                     <h1 class="text-titles3">Escucha ciudadana</h1>
                                 </div>
                                 <p class="">
@@ -150,7 +153,7 @@ permalink: "index.html"
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="d-flex align-items-center mb-4">
-                                    <img style="width: 50px;height: 50px;margin-right: 15px;" src="/assets/img/iconos/icono.png">
+                                    <img style="width: 50px;height: 50px;margin-right: 15px;" src="/assets/img/iconos/etapas2hov.png">
                                     <h1 class="text-titles3">Investigación</h1>
                                 </div>
                                 <p class="">
@@ -178,7 +181,7 @@ permalink: "index.html"
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="d-flex align-items-center mb-4">
-                                    <img style="width: 50px;height: 50px;margin-right: 15px;" src="/assets/img/iconos/icono.png">
+                                    <img style="width: 50px;height: 50px;margin-right: 15px;" src="/assets/img/iconos/etapas3hov.png">
                                     <h1 class="text-titles3">Definición del marco de acción</h1>
                                 </div>
                                 <p class="">
@@ -202,7 +205,7 @@ permalink: "index.html"
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="d-flex align-items-center mb-4">
-                                    <img style="width: 50px;height: 50px;margin-right: 15px;" src="/assets/img/iconos/icono.png">
+                                    <img style="width: 50px;height: 50px;margin-right: 15px;" src="/assets/img/iconos/etapas4hov.png">
                                     <h1 class="text-titles3">Mesas de diálogo</h1>
                                 </div>
                                 <p class="">
@@ -346,6 +349,21 @@ permalink: "index.html"
             </div>
         </section>
 
+        <!-- Participa
+        ============================================= -->
+
+        <section class="px-2" style="background-color: #3a428f;">
+            <div id="interaccion" class="container clearfix ">
+                <div class="row py-6">
+                    
+                    <div class="col-lg-12 text-center">
+                        <img class="m-auto" style="width: 150px;margin-bottom: 20px;" src="/assets/img/iconos/cabezanaranja.png">
+                        <h2 class="text-titles2 pb-4">¡Participa en la propuesta!</h2>
+                        <a href="/propuesta/index.html" class="btn">Participa</a>
+                </div>
+            </div>
+        </section>
+
         <!-- Imagenes del proceso
         ============================================= -->
 
@@ -436,30 +454,7 @@ permalink: "index.html"
         </section>
 
 
-        <!-- Que significa
-        ============================================= -->
-
-        <!-- <section class="px-2" style="background-color: #60298a;">
-            <div id="interaccion" class="container clearfix ">
-                <div class="row py-6">
-                    
-                    <div class="col-lg-12 text-center">
-                        <img class="m-auto p-4" src="/assets/img/iconos/ICONOS 05.png">
-                        <h2 class="text-titles2">¿Qué significa para ti la salud mental?</h2>
-                        <h6 class="text-titles4" style="color: #7f8b92!important;">¿Cuál es su importancia?</h6>
-                        <img width="250px" class="my-4 mx-auto" src="/assets/img/iconos/LINEA.png">
-                    </div>
-
-                    <div class="col-lg-6 pb-6">
-                        <blockquote class="twitter-tweet"><p lang="es" dir="ltr">En Instagram pregunté qué significa <a href="https://twitter.com/hashtag/CuidarLaMente?src=hash&amp;ref_src=twsrc%5Etfw">#CuidarLaMente</a> y estas son algunas respuestas👇<a href="https://twitter.com/hashtag/CuidarLaMente?src=hash&amp;ref_src=twsrc%5Etfw">#CuidarLaMente</a> también es ordenar el Estado para brindar respuestas oportunas a la atención integral de la salud mental🧠<br><br>Les dejo algunos principio de la iniciativa de ley que construiremos ⚡️ <a href="https://t.co/9qEIng9F3g">pic.twitter.com/9qEIng9F3g</a></p>&mdash; Laura F. Marroquín🌱 (@LauraFMarroquin) <a href="https://twitter.com/LauraFMarroquin/status/1772305350387024107?ref_src=twsrc%5Etfw">March 25, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                    <div class="col-lg-6 pb-6">
-                        <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Ahora que hay luz y voluntad, podrá existir una ley en la que tus emociones y tus pensamientos, importen. 🫂❤️‍🩹<a href="https://twitter.com/hashtag/CuidarLaMente?src=hash&amp;ref_src=twsrc%5Etfw">#CuidarLaMente</a> es legislar por el derecho a la salud mental de todos y todas las guatemaltecas. ✨🧠 <a href="https://t.co/kLpPXZTQrE">pic.twitter.com/kLpPXZTQrE</a></p>&mdash; Laura F. Marroquín🌱 (@LauraFMarroquin) <a href="https://twitter.com/LauraFMarroquin/status/1769056279492772342?ref_src=twsrc%5Etfw">March 16, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
+        
 
         <!-- Informate
         ============================================= -->
@@ -540,21 +535,67 @@ permalink: "index.html"
 {% block body_javascripts %}
 
 <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // Añade listeners para el hover de cada imagen
+        const imgBasePath = "/assets/img/iconos/";
+        const imagesHover = {
+            "img_etp_1": "etapas1hov.png",
+            "img_etp_2": "etapas2hov.png",
+            "img_etp_3": "etapas3hov.png",
+            "img_etp_4": "etapas4hov.png"
+        };
+
+        Object.keys(imagesHover).forEach((id) => {
+            const imgElement = document.getElementById(id);
+            const originalSrc = imgElement.src; // Almacena la ruta original
+            const hoverSrc = imgBasePath + imagesHover[id];
+
+            imgElement.addEventListener('mouseover', () => {
+                imgElement.src = hoverSrc;
+            });
+
+            imgElement.addEventListener('mouseout', () => {
+                // Restablece a la imagen original si el tab correspondiente no está activo.
+                if (!imgElement.closest('button').classList.contains('active')) {
+                    imgElement.src = originalSrc;
+                }
+            });
+        });
+
+        // Inicializa el tab por defecto
+        document.getElementById("defaultOpen").click();
+    });
+
     function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
+        var i, tabcontent, tablinks, imgElements;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByTagName("button");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+
+        // Restablece todas las imágenes a su estado original
+        imgElements = document.querySelectorAll("[id^='img_etp_']");
+        imgElements.forEach((img) => {
+            const baseName = img.id.replace('img_etp_', 'etapas');
+            img.src = `/assets/img/iconos/${baseName}.png`;
+        });
+
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.classList.add("active");
+
+        // Actualiza la imagen de la pestaña activa a su versión de hover
+        const activeImgElement = evt.currentTarget.querySelector("img");
+        if (activeImgElement) {
+            const hoverImgName = activeImgElement.id.replace('img_etp_', 'etapas') + "hov.png";
+            activeImgElement.src = `/assets/img/iconos/${hoverImgName}`;
+        }
     }
 
-    document.getElementById("defaultOpen").click();
 </script>
 
 <script>
