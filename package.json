@@ -13,5 +13,8 @@
     "@11ty/eleventy": "^2.0.1",
     "moment": "^2.30.1",
     "render-markdown-js": "^1.3.0"
+  },
+  "engines": {
+    "node": "17.*"
   }
 }
